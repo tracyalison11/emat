@@ -1,1 +1,15 @@
-<p>This is the partial for view 1.</p>
+<div class="row">
+  <div align="center" class="col-xs-12">
+    <h1>Engineering Materials</h1>
+    <h3>Design, Materials and Manufacturing Troubleshooting</h3>
+  </div>
+</div>
+<div class="row">
+  <div style="height: 305px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+      </div>
+    </div>
+  </div>
+</div>
