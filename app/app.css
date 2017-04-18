@@ -23,3 +23,17 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+/*Boostrap 3 Carousel alignment fix*/
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-control {
+  background: none !important;
+}
+
+.item > img {
+  height: 25em !important;
+  width: 40em !important;
+}
