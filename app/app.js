@@ -19,7 +19,7 @@ ematApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
     .state('home', {
       url: '/home',
-      templateUrl: 'partial-home.html',
+      templateUrl: 'views/home.html',
       controller:'homeController'
     })
 
