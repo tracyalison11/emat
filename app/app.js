@@ -1,19 +1,26 @@
-var ematApp = angular.module('myApp', ['ui.router']);
+var ematApp = angular.module('ematApp', [
 
-ematApp.config(function($stateProvider), $urlRouteProvider) {
+//Angular
+'ui.router',
 
-  $urlRouterProvider.otherwise('/home');
+//EMAT
+ 'home'
+])
 
-  $stateProvider
+ematApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-    .state('home', {
-      url: '/home',
-      templateUrl: 'partial-home.html'
-    })
-}
+    $urlRouterProvider.otherwise('/home');
 
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+    $stateProvider
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+      .state('home', {
+        url: '/home',
+        templateUrl: 'partial-home.html',
+        controller:'homeController'
+      })
+
+      .state('about', {
+        url: '/about',
+        template: 'about-us.html'
+      })
 }]);
