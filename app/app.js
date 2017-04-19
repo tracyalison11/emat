@@ -25,25 +25,25 @@ ematApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
     .state('about', {
       url: '/about',
-      template: 'about.html',
+      templateUrl: 'views/about.html',
       controller: 'aboutController'
     })
 
     .state('services', {
       url: '/services',
-      template: 'services.html',
+      templateUrl: 'views/services.html',
       controller: 'servicesController'
     })
 
     .state('clients', {
       url: '/clients',
-      template: 'clients.html',
+      templateUrl: 'views/clients.html',
       controller: 'clientsController'
     })
 
     .state('contact', {
       url: '/contact',
-      template: 'contact.html',
+      templateUrl: 'views/contact.html',
       controller: 'contactController'
     })
 
