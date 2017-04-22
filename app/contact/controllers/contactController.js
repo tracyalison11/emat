@@ -10,6 +10,14 @@ angular.module('contact')
     message: undefined
   };
 
+  // Email.send("from@you.com",
+  // "to@them.com",
+  // "This is a subject",
+  // "this is the body",
+  // "smtp.yourisp.com",
+  // "username",
+  // "password");
+
   $scope.submit = function() {
     console.log($scope.data);
   }
