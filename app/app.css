@@ -33,6 +33,11 @@
   background: none !important;
 }
 
+.carousel-control > .glyphicon {
+  color: #121212;
+  opacity: none;
+}
+
 .item > img {
   height: 25em !important;
   width: 40em !important;
