@@ -31,11 +31,20 @@
 
 .carousel-control {
   background: none !important;
+  opacity: 1;
 }
 
 .carousel-control > .glyphicon {
-  color: #121212;
-  opacity: none;
+  color: #2780e3;
+  opacity: 1;
+}
+
+.carousel-indicators li {
+  border: solid 2px #2780e3;
+}
+
+.carousel-indicators li.active {
+  background-color: #2780e3;
 }
 
 .item > img {
