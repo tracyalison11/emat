@@ -5,7 +5,6 @@ var ematApp = angular.module('ematApp', [
 
 //EMAT
  'home',
- 'about',
  'services',
  'clients',
  'contact'
@@ -21,12 +20,6 @@ ematApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       url: '/home',
       templateUrl: 'views/home.html',
       controller:'homeController'
-    })
-
-    .state('about', {
-      url: '/about',
-      templateUrl: 'views/about.html',
-      controller: 'aboutController'
     })
 
     .state('services', {
