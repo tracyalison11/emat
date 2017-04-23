@@ -1,6 +1,15 @@
 angular.module('clients')
 
-.controller('clientsController', function() {
+.controller('clientsController', function($scope) {
+
+  $scope.clients = [
+    {
+      name: 'Raytheon',
+      path: 'img/clients/raytheon.jpg',
+      project: 'Example Project',
+      description: 'Example Description'
+    }
+  ];
 
   $('.no-touch .project-list li:nth-child(3), .no-touch .project-list li:nth-child(8)').hover(function(e) {
   $(this).parents('.client-meta').next('.overflow-wrapper').find('img:nth-child(1)').toggleClass('show-image');
