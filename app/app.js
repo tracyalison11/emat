@@ -40,4 +40,10 @@ ematApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       controller: 'contactController'
     })
 
+  // Manage active class on navbar
+  $(".nav a").on("click", function(){
+    $(".nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+
 }]);

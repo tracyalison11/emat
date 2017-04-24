@@ -170,7 +170,7 @@ img {
 }
 
 .client-wrap {
-  margin: 5% auto 0;
+  margin: 3% auto 0;
   padding: 0;
   max-width: 1280px;
   width: 100%;
@@ -192,7 +192,7 @@ img {
 .client {
   vertical-align: middle;
   position: relative;
-  margin: 10px;
+  margin: 10px 0 20px 0px;
   max-width: calc(20% - 20px);
   height: 18.75em;
   width: 100%;
