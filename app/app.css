@@ -103,10 +103,18 @@ img {
 }
 
 .services-wrap {
-  margin: 5% auto 0;
+  margin: 5% auto 5em;
   padding: 0;
   max-width: 1280px;
   width: 100%;
+}
+
+.panel {
+  margin-bottom: 3.25em;
+}
+
+.list-group-item > a {
+  cursor: pointer;
 }
 
 .client-wrap {
