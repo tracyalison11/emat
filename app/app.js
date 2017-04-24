@@ -7,7 +7,14 @@ var ematApp = angular.module('ematApp', [
  'home',
  'services',
  'clients',
- 'contact'
+ 'contact',
+
+ //Nested Services States
+ // 'services.simple-beams',
+ // 'services.roark-plates',
+ // 'services.miscellaneous',
+ // 'services.material-properties'
+
 ])
 
 ematApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -24,8 +31,21 @@ ematApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
     .state('services', {
       url: '/services',
-      templateUrl: 'views/services.html',
-      controller: 'servicesController'
+      abstract: true,
+      templateUrl: 'views/services/services.html',
+    })
+
+    .state('services.services-list', {
+      url: '/services-list',
+      parent: 'services',
+      templateUrl: 'views/services/services-list.html',
+      controller: 'servicesController',
+    })
+
+    .state('services.simple-beams', {
+      url: '/simple-beams',
+      parent: 'services',
+      templateUrl: 'views/services/simple-beams.html'
     })
 
     .state('clients', {
