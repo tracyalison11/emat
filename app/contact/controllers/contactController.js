@@ -3,20 +3,19 @@ angular.module('contact')
 .controller('contactController', function($scope) {
 
   $scope.data = {
-    firstName: undefined,
-    lastName: undefined,
+    fullName: undefined,
     email: undefined,
     phone: undefined,
     message: undefined
   };
 
-  // Email.send("from@you.com",
-  // "to@them.com",
-  // "This is a subject",
-  // "this is the body",
-  // "smtp.yourisp.com",
-  // "username",
-  // "password");
+  // parameters: service_id, template_id, template_parameters
+  emailjs.send("<YOUR SERVICE ID>","<contactus>",{name: "James", notes: "Check this out!"})
+  .then(function(response) {
+     console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+  }, function(err) {
+     console.log("FAILED. error=", err);
+  });
 
   $scope.submit = function() {
     console.log($scope.data);
