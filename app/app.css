@@ -35,16 +35,16 @@
 }
 
 .carousel-control > .glyphicon {
-  color: #2780e3;
+  color: #CF4647;
   opacity: 1;
 }
 
 .carousel-indicators li {
-  border: solid 2px #2780e3;
+  border: solid 2px #CF4647;
 }
 
 .carousel-indicators li.active {
-  background-color: #2780e3;
+  background-color: #CF4647;
 }
 
 .item > img {
