@@ -24,6 +24,10 @@
   padding-right: 0.3em;
 }
 
+a {
+  color: #e60033;
+}
+
 /*Boostrap 3 Carousel alignment fix*/
 .carousel-inner img {
   margin: auto;
@@ -35,16 +39,16 @@
 }
 
 .carousel-control > .glyphicon {
-  color: #CF4647;
+  color: #e60033;
   opacity: 1;
 }
 
 .carousel-indicators li {
-  border: solid 2px #CF4647;
+  border: solid 2px #e60033;
 }
 
 .carousel-indicators li.active {
-  background-color: #CF4647;
+  background-color: #e60033;
 }
 
 .item > img {
