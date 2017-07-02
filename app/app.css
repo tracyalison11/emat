@@ -24,10 +24,6 @@
   padding-right: 0.3em;
 }
 
-a {
-  color: #e60033;
-}
-
 /*Boostrap 3 Carousel alignment fix*/
 .carousel-inner img {
   margin: auto;
@@ -39,16 +35,20 @@ a {
 }
 
 .carousel-control > .glyphicon {
-  color: #e60033;
+  color: #121212;
   opacity: 1;
 }
 
+.carousel-indicators {
+  bottom: 0 !important;
+}
+
 .carousel-indicators li {
-  border: solid 2px #e60033;
+  border: solid 2px #121212;
 }
 
 .carousel-indicators li.active {
-  background-color: #e60033;
+  background-color: #121212;
 }
 
 .item > img {
@@ -144,7 +144,7 @@ img {
 .client {
   vertical-align: middle;
   position: relative;
-  margin: 10px 0 20px 0px;
+  margin: 20px 0 40px 0px;
   max-width: calc(20% - 20px);
   height: 18.75em;
   width: 100%;
@@ -349,7 +349,7 @@ img.reset-logo {
   padding-top: 0;
   padding-bottom: 20px;
   text-align: center;
-  border-bottom: 4px solid rgb(189, 189, 255);
+  border-bottom: 4px solid #121212;
   transition: .2s ease all;
 }
 
@@ -359,7 +359,7 @@ img.reset-logo {
 
 .project-list:hover .bar {
   max-width: 100%;
-  border-top: 4px solid rgb(189, 189, 255);
+  border-top: 4px solid #121212;
 }
 
 .project-list:hover {
@@ -379,7 +379,7 @@ img.reset-logo {
   display: block;
   text-align: center;
   padding: 8px 10px;
-  font-size: .9rem;
+  font-size: 1.25rem;
 }
 
 .project-list li:hover {
