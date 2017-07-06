@@ -9,11 +9,15 @@ angular.module('contact')
     message: undefined
   };
 
+  $scope.noEmailProvided = undefined;
+  $scope.emailSent = false;
+
   // parameters: service_id, template_id, template_parameters
-
-
   $scope.submit = function() {
-    console.log($scope.data);
+    if (!$scope.data.email) {
+      $scope.noEmailProvided = true;
+      return;
+    }
 
     emailjs.send("smtp_server","contactus", {
       fullName: $scope.data.fullName,
@@ -23,6 +27,8 @@ angular.module('contact')
     })
     .then(function(response) {
        console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+       $scope.noEmailProvided = true;
+       $scope.emailSent = true;
     }, function(err) {
        console.log("FAILED. error=", err);
     });

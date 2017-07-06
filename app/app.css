@@ -24,6 +24,20 @@
   padding-right: 0.3em;
 }
 
+.services-wrap a {
+  color: #2780e3;
+}
+
+.contact-us img {
+  height:16em;
+  width:28em;
+  margin: 2em auto 3em auto;
+}
+
+.email-warning {
+  color: #ff0039;
+}
+
 /*Boostrap 3 Carousel alignment fix*/
 .carousel-inner img {
   margin: auto;

@@ -8,13 +8,6 @@ var ematApp = angular.module('ematApp', [
  'services',
  'clients',
  'contact',
-
- //Nested Services States
- // 'services.simple-beams',
- // 'services.roark-plates',
- // 'services.miscellaneous',
- // 'services.material-properties'
-
 ])
 
 ematApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -36,43 +29,12 @@ ematApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
     })
 
     // Services Child States
-
-      .state('services.services-list', {
-        url: '/list',
-        parent: 'services',
-        templateUrl: 'views/services/services-list.html',
-        controller: 'servicesController',
-      })
-
-      .state('services.fracture-mechanics', {
-        url: '/fracture-mechanics',
-        parent: 'services',
-        templateUrl: 'views/services/fracture-mechanics.html'
-      })
-
-      .state('services.simple-beams', {
-        url: '/simple-beams',
-        parent: 'services',
-        templateUrl: 'views/services/simple-beams.html'
-      })
-
-      .state('services.material-properties', {
-        url: '/material-properties',
-        parent: 'services',
-        templateUrl: 'views/services/material-properties.html'
-      })
-
-      .state('services.miscellaneous', {
-        url: '/miscellaneous',
-        parent: 'services',
-        templateUrl: 'views/services/miscellaneous.html'
-      })
-
-      .state('services.roark-plates', {
-        url: '/roark-plates',
-        parent: 'services',
-        templateUrl: 'views/services/roark-plates.html'
-      })
+    .state('services.services-list', {
+      url: '/list',
+      parent: 'services',
+      templateUrl: 'views/services/services-list.html',
+      controller: 'servicesController',
+    })
 
     .state('clients', {
       url: '/clients',

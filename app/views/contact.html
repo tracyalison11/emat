@@ -1,6 +1,14 @@
-<div class="row">
+<div class="row contact-us">
   <div class-"col-xs-12">
-    <img class="center-block" src="/img/canoe.jpg" style="height:16em;width:28em;margin-top:2em;">
+    <img class="center-block" src="/img/canoe.jpg">
+    <div class="row">
+      <div ng-show="emailSent" class="col-xs-4 col-xs-offset-4">
+        <div class="alert alert-dismissible alert-success">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Success!</strong> Your e-mail has been sent.
+        </div>
+      </div>
+    </div>
     <div class="row">
       <form class="form-horizontal">
         <div class="form-group">
@@ -9,10 +17,11 @@
             <input type="name" class="form-control" id="fname" ng-model="data.fullName" placeholder="Full Name">
           </div>
         </div>
-        <div class="form-group">
+        <div class="form-group" ng-class="{'has-error': noEmailProvided}">
           <label for="email" class="col-xs-4 control-label">E-mail</label>
           <div class="col-xs-4">
             <input type="email" class="form-control" id="email" ng-model="data.email" placeholder="E-mail">
+            <span class="email-warning" ng-show="noEmailProvided">Please provide an e-mail address</span>
           </div>
         </div>
         <div class="form-group">
