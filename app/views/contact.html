@@ -1,14 +1,14 @@
 <div class="row contact-us">
   <div class-"col-xs-12">
     <img class="center-block" src="/img/canoe.jpg">
-    <div class="row">
+    <!-- <div class="row">
       <div ng-show="emailSent" class="col-xs-4 col-xs-offset-4">
         <div class="alert alert-dismissible alert-success">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
           <strong>Success!</strong> Your e-mail has been sent.
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="row">
       <form class="form-horizontal">
         <div class="form-group">
@@ -38,7 +38,8 @@
         </div>
         <div class="form-group">
           <div class="col-xs-offset-4 col-xs-4">
-            <button type="submit" class="btn btn-default" ng-click="submit()">Send</button>
+            <button type="button"
+                    class="btn btn-default" ng-class="{'btn-success': stateText === 'Sent'}" ng-click="submit()">{{stateText}}</button>
           </div>
         </div>
       </form>
