@@ -123,12 +123,6 @@ angular.module('clients')
       description: 'Provide technical consulting services to assist FLIR Engineering in identifying the cause of the Laser Cooling System leaks'
     },
     {
-      name: 'Schlosser Forge',
-      path: 'img/clients/alcoa.jpeg',
-      project: 'Forging Consultation',
-      description: 'Provide consultation and training in he producion of NI-Base superalloy forgings'
-    },
-    {
       name: 'Fluidmaster',
       path: 'img/clients/Fluidmaster.png',
       project: 'Plastic Failures',
